@@ -1,19 +1,254 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TestOmråde</title>
 </head>
 <body>
 
-<div class="container">
-  <h1>My First Bootstrap Page. Test.</h1>
-  <p>This part is inside a .container class.</p>
-  <p>The .container class provides a responsive fixed width container.</p>
-</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    Johan - CV
+                </span>
+            </a>
+            <!-- toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a style="color:purple;" class="nav-link" href="#LidtOmMig">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#IT-KOMPETENCER">IT KOMPETENCER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ERHVERSERFARING">ERHVERSERFARING</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="#UDDANNELSE">UDDANNELSE</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="btn btn-secondary" href="#kontakt">Kontakt Mig</a>
+                    </li>
+          
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      
+    <!-- main image & intro text -->
+      <section id="intro">
+        <div class="container-lg mt-5 pb-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 text-center text-md-start">
+                    <h1>
+                        <div class="display-5 fw-bold">Hej! Jeg hedder</div>
+                        <div class="display-3 fw-bold">Johan Leibeck Fryd.</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Programør, It specialist og Web-designer.</p>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">buy now</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <img class="img-fluid" src="/assets/johanSelfie.png" alt="johanSelfie">
+                </div>
+            </div>
+        </div>
+      </section>
+    
+    <!-- Lidt om mig section -->
+
+      <section id="LidtOmMig">
+        <div class="container-lg mt-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 text-center text-md-start mt-5">
+                    <h1>
+                        <div style="color:white;" class="display-1 fw-bold"> LOL.</div>
+                        <div class="display-6">- Lidt om mig.</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Jeg er 23 år
+                        Jeg er en afslappet hjælpsom Datatekniker-elev med speciale i programmering og har altid har haft interesse for It/computer og hardware.</p>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">buy now</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    
+                </div>
+            </div>
+        </div>
+      </section>
+
+      
+
+      <!-- IT KOMPETENCER -->
+      <section id="IT-KOMPETENCER" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>IT KOMPETENCER</h2>
+                <p class="lead text-muted">Lidt om hvad jeg kan</p>
+            </div>
+
+            <div class="cream-bg">
+                <div class="container">
+                    <div class="row my-5 align-items-center justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="card mb-3 shadow">
+                                <div class="col-3 mx-auto text-center">
+                                    <img src="/assets/cSharp3.png" class="card-img-top mt-5" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">C Sharp</h4>
+                                    <p class="lead card-subtitle mb-5">Programerings sprog</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card mb-3 shadow">
+                                <div class="col-3 mx-auto text-center">
+                                    <img src="/assets/html.png" class="card-img-top mt-5" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Html & Bootstrap</h4>
+                                    <p class="lead card-subtitle mb-5">Web design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card mb-3 shadow">
+                                <div class="col-3 mx-auto text-center">
+                                    <img src="/assets/network.png" class="card-img-top mt-5" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Network</h4>
+                                    <p class="lead card-subtitle mb-5">Opsætning af netwærk</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      </section>
+
+    <!-- IT ERHVERSERFARING -->
+    <section id="ERHVERSERFARING" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>ERHVERSERFARING</h2>
+            </div>
+            <div class="row justify-content-center pt-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">It-support praktik - Koncern It Københavns kommune</h5>
+                            <small class="mb-1">2021 november - 2022 maj</small>
+                            <p class="mt-2">Ansvarsområder</p>
+                            <p class="px-3">Jeg var i deltidspraktik en gang om ugen, mens jeg gik på STU.<br>
+                                Var rundt på forskellige afdelinger for at prøve lidt af hvert, og for at se, om det var noget for mig.<br> 
+                                Var i It-support-afdelingen, hvor vi kørte ud med computere og satte dem op.<br> Derefter var jeg i en afdeling, hvor vi satte routere op og regnede ud, hvordan de skulle sættes op.<br> 
+                                Så var jeg i support-centret, hvor vi modtog opkald og løste folks computerproblemer.<br> Derefter var jeg i serverafdelingen, der vedligeholdte og opsatte servere.<br> Der var jeg længst, og til sidst i It-sikkerhed.<br> 
+                                Jeg fik meget ros, og de opfordrede vende tilbage hvis jeg skulle i praktik som it supporter/infrastruktur men har nu valgt programmering
+                                </p>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">It supporter Know how praktik, Elgiganten</h5>
+                            <small class="mb-1">2019 oktober - 2019 november</small>
+                            <p class="mt-2">Ansvarsområder</p>
+                            <p class="px-3">Skulle hjælpe med at løse kunders computer-problemer, indstille/opsætte computere og fjernsyn, så de var parat til at blive solgt.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UDDANNELSE -->
+    <section id="UDDANNELSE" class="bg-light py-4">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>UDDANNELSE</h2>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">It-Supporter/Datateknikker</h5>
+                            <small class="mb-1">2022-nu</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">STU Sputnik, Nørrebro</h5>
+                            <small class="mb-1">2019-2022</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">Produktionsskole Kuba</h5>
+                            <small class="mb-1">2017-2018</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">HTX Mediegymnasie Forum Frederiksberg</h5>
+                            <small class="mb-1">2016-2017</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">10. klasse Det Fri Gymnasium</h5>
+                            <small class="mb-1">2015-2016</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">Folkeskole Oehlenschlægersgade Skole</h5>
+                            <small class="mb-1">2005-2015</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt mig -->
+    <section id="kontakt">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Kontakt mig</h2>
+                <p>Her kan du skrive til mig</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="e.g. mario@gmail.com">
+
+                        <label for="name" class="form-label"> Navn</label>
+                        <input type="text" class="form-control" id="name" placeholder="e.g. mario">
+
+                        <label for="subject" class="form-label"> Emne</label>
+                        <input type="subject" class="form-control" id="subject">
+
+                        <label for="besked" class="form-label"> Din besked</label>
+                        <textarea id="besked" class="form-control mb-4" style="height: 140px;"></textarea>
+
+                        <div class="mb-4 text-center">
+                            <button type="send" class="btn btn-secondary"> Send</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
